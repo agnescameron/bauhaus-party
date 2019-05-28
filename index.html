@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head> 
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+<body>
+    
+<title>bauhaus party</title>
+
+<div class = "menu">
+<h3>BAUHAUS PARTY </br>AT MIT</h3>   
+<p>In celebration  of 100 years of the Bauhaus, this week, students and faculty from the Media Lab, Architecture and ACT programs are running a series of workshops that explore the craft, art and performance legacies of the Bauhaus. Workshops are open to all, require no prior skills, and  will be held between the Cube, the Mars Lab, and the Media Lab’s 3rd floor atrium.</p>
+
+<p>The series will culminate in a final ‘sounds party’ held in the ACT cube, at 5pm on Sunday 2nd of June, where all the work will be shown.</p>
+
+<h2 onmouseover="showInfo('clay')" onmouseout="hideInfo('clay')">clay party 05.29</h2>
+<div id="clay" class="hiddeninfo">wednesday 29th, 2pm, e14-251h mars lab mezzanine<br>
+Erin Genia will lead a design workshop on ceramics, with a focus on the Bauhaus’ ceramic design.
+</div>
+
+<h2 onmouseover="showInfo('metal')" onmouseout="hideInfo('metal')">metal party 05.30</h2>
+<div id="metal" class="hiddeninfo">thursday 30th, 7:30pm, media lab workshop space<br>
+Sara Falcone from the CBA will lead a workshop on metal costume design . This workshop will use the FabLight metal laser cutter and welding torches to construct wearable metal sculptures. This workshop has limited spaces, so please RSVP to agnescam@mit.edu if you’d like to attend. You will need to bring close-toed shoes and long pants.
+</div>
+
+<h2 onmouseover="showInfo('printing')" onmouseout="hideInfo('printing')">printing party 05.31</h2>
+<div id="printing" class="hiddeninfo">media lab kitchen, friday morning 10-12am
+Pip Mothersill will lead a screen-printing workshop
+</div>
+
+<h2 onmouseover="showInfo('weaving')" onmouseout="hideInfo('weaving')">weaving party 05.31</h2>
+<div id="weaving" class="hiddeninfo">ACT cube
+Susan Williams will lead a workshop on weaving at the Bauhaus, 
+</div>
+
+<h2 onmouseover="showInfo('knitting')" onmouseout="hideInfo('knitting')">knitting party 06.01</h2>
+<div id="knitting" class="hiddeninfo">ACT cube
+Carmel Snow from the Self-Assembly Lab will lead a workshop on knitting 
+</div>
+
+<h2 onmouseover="showInfo('computer')" onmouseout="hideInfo('computer')">computer party 06.02</h2>
+<div id="computer" class="hiddeninfo">ACT cube
+Carmel Snow from the Self-Assembly Lab will lead a workshop on knitting 
+</div>
+
+<h2 onmouseover="showInfo('sounds')" onmouseout="hideInfo('sounds')">sounds party 06.02</h2>
+<div id="sounds" class="hiddeninfo">ACT cube
+Carmel Snow from the Self-Assembly Lab will lead a workshop on knitting 
+</div>
+
+</div>
+
+</body>
+
+<script>
+
+function showInfo(infobox){
+	info = document.getElementById(infobox).style.display = 'block';
+}
+
+function hideInfo(infobox){
+	info = document.getElementById(infobox).style.display = 'none';
+}
+
+</script>	
+</html>
