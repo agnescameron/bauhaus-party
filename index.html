@@ -10,59 +10,64 @@
     
 <title>bauhaus party</title>
 
+<div class="container">
 <div class = "menu">
 <h3>BAUHAUS PARTY </br>AT MIT</h3>   
 <p>In celebration  of 100 years of the Bauhaus, this week, students and faculty from the Media Lab, Architecture and ACT programs are running a series of workshops that explore the craft, art and performance legacies of the Bauhaus. Workshops are open to all, require no prior skills, and  will be held between the Cube, the Mars Lab, and the Media Lab’s 3rd floor atrium.</p>
 
 <p>The series will culminate in a final ‘sounds party’ held in the ACT cube, at 5pm on Sunday 2nd of June, where all the work will be shown.</p>
 
-<h2 onmouseover="showInfo('clay')" onmouseout="hideInfo('clay')">clay party 05.29</h2>
-<div id="clay" class="hiddeninfo">wednesday 29th, 2pm, e14-251h mars lab mezzanine<br>
-Erin Genia will lead a design workshop on ceramics, with a focus on the Bauhaus’ ceramic design.
+<h2 onmouseover="showInfo('clay')">clay party 05.29</h2>
+<div id="clay" class="hiddeninfo"><p><b>wednesday 29th, 2pm, e14-251h mars lab mezzanine</b></p>
+<p>Erin Genia will lead a design workshop on ceramics, with a focus on the Bauhaus’ work with tableware. Use a combination of coil and slab building techniques to make a unique Bauhaus-style beverage mug. Bring clothes that can get messy!</p>
 </div>
 
-<h2 onmouseover="showInfo('metal')" onmouseout="hideInfo('metal')">metal party 05.30</h2>
-<div id="metal" class="hiddeninfo">thursday 30th, 7:30pm, media lab workshop space<br>
-Sara Falcone from the CBA will lead a workshop on metal costume design . This workshop will use the FabLight metal laser cutter and welding torches to construct wearable metal sculptures. This workshop has limited spaces, so please RSVP to agnescam@mit.edu if you’d like to attend. You will need to bring close-toed shoes and long pants.
+<h2 onmouseover="showInfo('metal')" >metal party 05.30</h2>
+<div id="metal" class="hiddeninfo"> <p><b>7:30pm, mars lab, e14-151</b></p>
+<p>Sara Falcone will lead a workshop on metal costume design. This workshop will use the FabLight metal laser cutter and welding torches to construct wearable metal sculptures. This workshop has limited spaces and requires some workshop experience, so please email Sara and I (sfalcone@mit.edu, agnescam@mit.edu) ahead of time if you’d like to attend. You will need to bring close-toed shoes and long pants.</p>
 </div>
 
-<h2 onmouseover="showInfo('printing')" onmouseout="hideInfo('printing')">printing party 05.31</h2>
-<div id="printing" class="hiddeninfo">media lab kitchen, friday morning 10-12am
-Pip Mothersill will lead a screen-printing workshop
+<h2 onmouseover="showInfo('printing')">printing party 05.31</h2>
+<div id="printing" class="hiddeninfo">media lab 3rd-floor kitchen, 10-12am
+Pip Mothersill will lead a screen-printing workshop, printing postcards in the style of the Bauhaus’ exhibition flyers. You will learn screen-printing techniques, and the history of graphic design at the Bauhaus, making a number of postcards.
 </div>
 
-<h2 onmouseover="showInfo('weaving')" onmouseout="hideInfo('weaving')">weaving party 05.31</h2>
-<div id="weaving" class="hiddeninfo">ACT cube
-Susan Williams will lead a workshop on weaving at the Bauhaus, 
+<h2 onmouseover="showInfo('weaving')">weaving party 05.31</h2>
+<div id="weaving" class="hiddeninfo"><p><b>2pm, ACT cube, e15-001</b></p>
+This workshop will celebrate all things woven! But most importantly the queen bee of weaving herself, Ani Albers (you thoughts Josef was the Bauhaus master, think again...). Susan Williams will teach the basics of hand weaving on a couple different types of looms. There will be also be books and textile goodies.
 </div>
 
-<h2 onmouseover="showInfo('knitting')" onmouseout="hideInfo('knitting')">knitting party 06.01</h2>
-<div id="knitting" class="hiddeninfo">ACT cube
-Carmel Snow from the Self-Assembly Lab will lead a workshop on knitting 
+<h2 onmouseover="showInfo('knitting')">knitting party 06.01</h2>
+<div id="knitting" class="hiddeninfo"><p><b>1pm, ACT cube, e15-001</b></p>
+Carmel Snow is a 3D knit designer + textile artist doing knit research at the Self-Assembly Lab. She will lead a workshop on machine knitting, fire, and futurism, about the Bauhaus textile workshop and its contemporary relationship to Burning Man and globally in ephemeral spaces. She will teach machine knitting basics with plant + animal yarns, commencing in a textile + fire performance.
 </div>
 
-<h2 onmouseover="showInfo('computer')" onmouseout="hideInfo('computer')">computer party 06.02</h2>
-<div id="computer" class="hiddeninfo">ACT cube
-Carmel Snow from the Self-Assembly Lab will lead a workshop on knitting 
+<h2 onmouseover="showInfo('computer')">computer party 06.02</h2>
+<div id="computer" class="hiddeninfo"><p><b>1pm, ACT cube, e15-001</b></p>
+Zach Lieberman will lead a workshop on kinetic costume. In this workshop simple body tracking will be used to create a series of costumes based on body movements.  A small framework of code examples in openframeworks will be prepared and we'll work together to look at ways of using code to extend and abstract the human form.  Some approaches require little to no coding -- we can use elements such as cut paper, drawing, etc, while other costumes we work on may require some familiarity with basic coding / P5 / OF
 </div>
 
-<h2 onmouseover="showInfo('sounds')" onmouseout="hideInfo('sounds')">sounds party 06.02</h2>
-<div id="sounds" class="hiddeninfo">ACT cube
-Carmel Snow from the Self-Assembly Lab will lead a workshop on knitting 
+<h2 onmouseover="showInfo('sounds')">sounds party 06.02</h2>
+<div id="sounds" class="hiddeninfo"><p><b>5pm, ACT cube, e15-001</b></p>
+Nicole L’Huillier and Juan Necochea will end the celebration with a series of modernist and futurist sounds. All the works that have been created will be brought together, and friends and family welcomed to celebrate. There will be performances, dancing and refreshments, all welcome.
 </div>
 
 </div>
 
+<!-- <div class="imgs" style="background-color: blue">
+</div>
+ -->
+</div>
 </body>
 
 <script>
 
-function showInfo(infobox){
-	info = document.getElementById(infobox).style.display = 'block';
-}
+var lastinfobox = 'clay';
 
-function hideInfo(infobox){
-	info = document.getElementById(infobox).style.display = 'none';
+function showInfo(infobox){
+	document.getElementById(lastinfobox).style.display = 'none';
+	document.getElementById(infobox).style.display = 'block';
+	lastinfobox = infobox;
 }
 
 </script>	
